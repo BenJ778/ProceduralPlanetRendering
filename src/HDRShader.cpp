@@ -361,7 +361,7 @@ tcout << _T("HDRShader::LoadCgEffect()...") << tendl;
 	cgGLRegisterStates(m_CgContext);
 
 	//============== エフェクトファイル読み込み ===============//
-	m_CgEffect = cgCreateEffectFromFile(m_CgContext, "../../assets/shader/HDRShader.cgfx", NULL);
+	m_CgEffect = cgCreateEffectFromFile(m_CgContext, "../assets/shader/HDRShader.cgfx", NULL);
 	cgSetEffectName(m_CgEffect, "HDRShader.cgfx");
 
 	if(IsValidEffect(m_CgEffect)==false) return; //exit(0);

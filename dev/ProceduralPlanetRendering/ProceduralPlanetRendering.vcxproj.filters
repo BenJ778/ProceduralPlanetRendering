@@ -19,185 +19,185 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\src\res.rc">
-      <Filter>Resource</Filter>
-    </ResourceCompile>
+    <ClCompile Include="..\..\src\AtmosphericShader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\oreore\images\Bitmap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\scene\BoundingVolume.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\resource\CacheDataManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\scene\Camera.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\scene\CameraObject.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Controller_base.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\scene\Frustum.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\G_Buffer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\resource\GLFrameBufferObject.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\resource\GLRenderTarget.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GrahpicsDevice.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\HDRShader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\HeightmapGenerator.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\scene\Material.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\app\MyGUI.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PlanetRenderingEngine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PlanetRenderingEngine_Win32main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SeamlessPatches.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TerrainEngine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TerrainMaterial.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\resource\Texture.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\oreore\thread\win\ThreadPool.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TileCache.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\resource\TileCacheTexture.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\scene\TransformAttribute.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\graphics\gl4x\scene\ViewFrustum.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VirtualTexture.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\src\Icon.ico">
+    <ClInclude Include="..\..\src\AtmosphericShader.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\oreore\images\Bitmap.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\scene\BoundingVolume.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\resource\CacheDataManager.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\scene\Camera.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\scene\CameraObject.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Controller_base.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\scene\Frustum.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\G_Buffer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\resource\GLFrameBufferObject.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\resource\GLRenderTarget.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GraphicsDevice.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\HDRShader.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\HeightmapGenerator.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\scene\Material.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\app\MyGUI.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PlanetRenderingEngine.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\resource.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SeamlessPatches.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TerrainEngine.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TerrainMaterial.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\resource\Texture.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\oreore\thread\win\ThreadPool.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TileCache.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\resource\TileCacheTexture.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\scene\TransformAttribute.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\graphics\gl4x\scene\ViewFrustum.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\VirtualTexture.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\src\Icon.ico">
       <Filter>Resource</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\AtmosphericShader.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\Controller_base.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\G_Buffer.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\GrahpicsDevice.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\HDRShader.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\HeightmapGenerator.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\PlanetRenderingEngine.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\PlanetRenderingEngine_Win32main.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\SeamlessPatches.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\TerrainEngine.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\TerrainMaterial.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\TileCache.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\VirtualTexture.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\resource\Texture.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\resource\GLRenderTarget.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\resource\TileCacheTexture.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\scene\ViewFrustum.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\scene\Camera.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\resource\GLFrameBufferObject.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\scene\Frustum.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\scene\Material.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\scene\CameraObject.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\resource\CacheDataManager.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\scene\TransformAttribute.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\app\MyGUI.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\graphics\gl4x\scene\BoundingVolume.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\oreore\thread\win\ThreadPool.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\oreore\images\Bitmap.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\src\AtmosphericShader.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Controller_base.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\G_Buffer.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\GraphicsDevice.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\HDRShader.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\HeightmapGenerator.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\PlanetRenderingEngine.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\resource.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\SeamlessPatches.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\TerrainEngine.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\TerrainMaterial.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\TileCache.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\VirtualTexture.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\resource\Texture.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\resource\GLRenderTarget.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\resource\TileCacheTexture.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\scene\ViewFrustum.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\scene\Camera.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\resource\GLFrameBufferObject.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\scene\Frustum.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\scene\Material.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\scene\CameraObject.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\resource\CacheDataManager.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\scene\TransformAttribute.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\app\MyGUI.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\graphics\gl4x\scene\BoundingVolume.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\oreore\thread\win\ThreadPool.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\oreore\images\Bitmap.h">
-      <Filter>Header</Filter>
-    </ClInclude>
+    <ResourceCompile Include="..\..\src\res.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

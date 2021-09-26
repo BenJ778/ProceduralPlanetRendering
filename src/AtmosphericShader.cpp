@@ -50,7 +50,7 @@ tcout << _T("AtmosphericShader::AtmosphericShader()...") << tendl;
 	RenderBuffer_Surface = AllocateTexture2D(GL_NEAREST, GL_NEAREST, GL_CLAMP_TO_EDGE, GL_CLAMP_TO_EDGE, width, height, GL_RGBA32F, GL_RGBA, GL_FLOAT);// 球面形状を保存するバッファ
 
 	unsigned int w, h;
-	float *img = Bitmap_load_texture("../../assets/texture/starfield.bmp", w, h);
+	float *img = Bitmap_load_texture("../assets/texture/starfield.bmp", w, h);
 	StarFieldTexture = AllocateTexture2D(GL_LINEAR, GL_LINEAR, GL_CLAMP, GL_CLAMP, w, h, GL_RGB16F_ARB, GL_RGB, GL_FLOAT, img);
 
 
@@ -565,34 +565,34 @@ tcout << _T("AtmosphericShader::LoadCgEffect()...") << tendl;
 	cgGLRegisterStates(CgContext);
 
 	//==================== エフェクトファイルを読み込む ==================//
-	CgEffect[PRECOMPUTE_TRANSMITTANCE] = cgCreateEffectFromFile(CgContext, "../../assets/shader/Transmittance.cgfx", NULL);
+	CgEffect[PRECOMPUTE_TRANSMITTANCE] = cgCreateEffectFromFile(CgContext, "../assets/shader/Transmittance.cgfx", NULL);
 	cgSetEffectName(CgEffect[PRECOMPUTE_TRANSMITTANCE], "transmittance.cgfx");
 
-	CgEffect[PRECOMPUTE_IRRADIANCE1] = cgCreateEffectFromFile(CgContext, "../../assets/shader/Irradiance1.cgfx", NULL);
+	CgEffect[PRECOMPUTE_IRRADIANCE1] = cgCreateEffectFromFile(CgContext, "../assets/shader/Irradiance1.cgfx", NULL);
 	cgSetEffectName(CgEffect[PRECOMPUTE_IRRADIANCE1], "irradiance1.cgfx");
 
-	CgEffect[PRECOMPUTE_INSCATTER1] = cgCreateEffectFromFile(CgContext, "../../assets/shader/Inscatter1.cgfx", NULL);
+	CgEffect[PRECOMPUTE_INSCATTER1] = cgCreateEffectFromFile(CgContext, "../assets/shader/Inscatter1.cgfx", NULL);
 	cgSetEffectName(CgEffect[PRECOMPUTE_INSCATTER1], "inscatter1.cgfx");
 
-	CgEffect[COPY_IRRADIANCE] = cgCreateEffectFromFile(CgContext, "../../assets/shader/CopyIrradiance.cgfx", NULL);
+	CgEffect[COPY_IRRADIANCE] = cgCreateEffectFromFile(CgContext, "../assets/shader/CopyIrradiance.cgfx", NULL);
 	cgSetEffectName(CgEffect[COPY_IRRADIANCE], "copyIrradiance.cgfx");
 
-	CgEffect[COPY_INSCATTER1] = cgCreateEffectFromFile(CgContext, "../../assets/shader/CopyInscatter1.cgfx", NULL);
+	CgEffect[COPY_INSCATTER1] = cgCreateEffectFromFile(CgContext, "../assets/shader/CopyInscatter1.cgfx", NULL);
 	cgSetEffectName(CgEffect[COPY_INSCATTER1], "copyInscatter1.cgfx");
 
-	CgEffect[INSCATTER_S] = cgCreateEffectFromFile(CgContext, "../../assets/shader/InscatterS.cgfx", NULL);
+	CgEffect[INSCATTER_S] = cgCreateEffectFromFile(CgContext, "../assets/shader/InscatterS.cgfx", NULL);
 	cgSetEffectName(CgEffect[INSCATTER_S], "InscatterS.cgfx");
 
-	CgEffect[IRRADIANCE_N] = cgCreateEffectFromFile(CgContext, "../../assets/shader/IrradianceN.cgfx", NULL);
+	CgEffect[IRRADIANCE_N] = cgCreateEffectFromFile(CgContext, "../assets/shader/IrradianceN.cgfx", NULL);
 	cgSetEffectName(CgEffect[IRRADIANCE_N], "IrradianceN.cgfx");
 
-	CgEffect[INSCATTER_N] = cgCreateEffectFromFile(CgContext, "../../assets/shader/InscatterN.cgfx", NULL);
+	CgEffect[INSCATTER_N] = cgCreateEffectFromFile(CgContext, "../assets/shader/InscatterN.cgfx", NULL);
 	cgSetEffectName(CgEffect[INSCATTER_N], "InscatterN.cgfx");
 
-	CgEffect[COPY_INSCATTER_N] = cgCreateEffectFromFile(CgContext, "../../assets/shader/CopyInscatterN.cgfx", NULL);
+	CgEffect[COPY_INSCATTER_N] = cgCreateEffectFromFile(CgContext, "../assets/shader/CopyInscatterN.cgfx", NULL);
 	cgSetEffectName(CgEffect[COPY_INSCATTER_N], "CopyInscatterN.cgfx");
 
-	CgEffect[ATMOSPHERIC_SHADER] = cgCreateEffectFromFile(CgContext, "../../assets/shader/AtmosphericShader.cgfx", NULL);
+	CgEffect[ATMOSPHERIC_SHADER] = cgCreateEffectFromFile(CgContext, "../assets/shader/AtmosphericShader.cgfx", NULL);
 	cgSetEffectName(CgEffect[ATMOSPHERIC_SHADER], "RenderSky.cgfx");
 
 

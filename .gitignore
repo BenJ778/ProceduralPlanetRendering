@@ -40,5 +40,4 @@
 *.tlog
 *.iobj
 *.ipdb
-/oreore
-/graphics
+/external

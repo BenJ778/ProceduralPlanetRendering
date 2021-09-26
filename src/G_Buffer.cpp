@@ -175,7 +175,7 @@ tcout << _T("G_Buffer::LoadCgEffect()...") << tendl;
 	cgGLRegisterStates(m_CgContext);
 
 	//============== エフェクトファイル読み込み ===============//
-	m_CgEffect = cgCreateEffectFromFile(m_CgContext, "../../assets/shader/G_Buffer.cgfx", NULL);
+	m_CgEffect = cgCreateEffectFromFile(m_CgContext, "../assets/shader/G_Buffer.cgfx", NULL);
 	cgSetEffectName(m_CgEffect, "G_Buffer.cgfx");
 
 	if(IsValidEffect(m_CgEffect)==false) return;
