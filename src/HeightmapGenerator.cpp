@@ -303,7 +303,7 @@ tcout << _T("HeightmapGenerator::LoadCgEffect()...") << tendl;
 	cgGLRegisterStates(m_CgContext);
 
 	//============== エフェクトファイル読み込み ===============//
-	m_CgEffect = cgCreateEffectFromFile(m_CgContext, "Shader/HeightmapGenerator.cgfx", NULL);
+	m_CgEffect = cgCreateEffectFromFile(m_CgContext, "../../assets/shader/HeightmapGenerator.cgfx", NULL);
 	cgSetEffectName(m_CgEffect, "HeightmapGenerator.cgfx");
 
 	if(IsValidEffect(m_CgEffect)==false) return; //exit(0);

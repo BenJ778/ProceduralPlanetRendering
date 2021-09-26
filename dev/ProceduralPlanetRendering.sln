@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1209
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlanetRenderingEngine", "PlanetRenderingEngine.vcxproj", "{9B630C0B-908E-426C-89C7-1DEF9AE16BE0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProceduralPlanetRendering", "ProceduralPlanetRendering.vcxproj", "{9B630C0B-908E-426C-89C7-1DEF9AE16BE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {720EE234-4396-4AB4-B537-64D157A7F056}
 	EndGlobalSection
 EndGlobal

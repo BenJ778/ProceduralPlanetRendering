@@ -145,7 +145,7 @@ tcout << _T("TerrainEngine::Init()...") << tendl;
 	float *img;
 	unsigned int w,h;
 	
-	img = Bitmap_load_texture("../../test/PlanetRenderingEngine/Texture/sandcolorscale.bmp", w,h);
+	img = Bitmap_load_texture("../../assets/texture/sandcolorscale.bmp", w,h);
 	m_SandScaleTexture	= AllocateTexture1D(GL_LINEAR, GL_LINEAR, (int)w, GL_RGB8, GL_RGB, GL_FLOAT, img);
 
 	//============= Cgエフェクトをロードする ==========//
@@ -640,7 +640,7 @@ tcout << _T("TerrainEngine::LoadCgEffect()...") << tendl;
 	cgGLRegisterStates(m_CgContext);
 
 	//============== エフェクトファイル読み込み ===============//
-	m_CgEffect = cgCreateEffectFromFile(m_CgContext, "Shader/TerrainEngine.cgfx", NULL);
+	m_CgEffect = cgCreateEffectFromFile(m_CgContext, "../../assets/shader/TerrainEngine.cgfx", NULL);
 	cgSetEffectName(m_CgEffect, "TerrainEngine.cgfx");
 	
 	if(IsValidEffect(m_CgEffect)==false) return; //exit(0);
