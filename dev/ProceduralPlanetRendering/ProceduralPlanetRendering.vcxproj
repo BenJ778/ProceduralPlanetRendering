@@ -60,7 +60,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>../../;D:/Lib/opengl/include;$(CG_INC_PATH)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../external;D:/Lib/opengl/include;$(CG_INC_PATH)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -81,7 +81,7 @@
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>../../;D:/Lib/opengl/include;$(CG_INC_PATH)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../external;D:/Lib/opengl/include;$(CG_INC_PATH)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -98,21 +98,21 @@
     <Image Include="..\..\src\Icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\graphics\gl4x\app\MyGUI.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\resource\CacheDataManager.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\resource\GLFrameBufferObject.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\resource\GLRenderTarget.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\resource\Texture.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\resource\TileCacheTexture.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\scene\BoundingVolume.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\scene\Camera.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\scene\CameraObject.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\scene\Frustum.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\scene\Material.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\scene\TransformAttribute.cpp" />
-    <ClCompile Include="..\..\graphics\gl4x\scene\ViewFrustum.cpp" />
-    <ClCompile Include="..\..\oreore\images\Bitmap.cpp" />
-    <ClCompile Include="..\..\oreore\thread\win\ThreadPool.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\app\MyGUI.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\resource\CacheDataManager.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\resource\GLFrameBufferObject.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\resource\GLRenderTarget.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\resource\Texture.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\resource\TileCacheTexture.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\scene\BoundingVolume.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\scene\Camera.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\scene\CameraObject.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\scene\Frustum.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\scene\Material.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\scene\TransformAttribute.cpp" />
+    <ClCompile Include="..\..\external\graphics\gl4x\scene\ViewFrustum.cpp" />
+    <ClCompile Include="..\..\external\oreore\images\Bitmap.cpp" />
+    <ClCompile Include="..\..\external\oreore\thread\win\ThreadPool.cpp" />
     <ClCompile Include="..\..\src\AtmosphericShader.cpp" />
     <ClCompile Include="..\..\src\Controller_base.cpp" />
     <ClCompile Include="..\..\src\GrahpicsDevice.cpp" />
@@ -128,21 +128,21 @@
     <ClCompile Include="..\..\src\VirtualTexture.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\graphics\gl4x\app\MyGUI.h" />
-    <ClInclude Include="..\..\graphics\gl4x\resource\CacheDataManager.h" />
-    <ClInclude Include="..\..\graphics\gl4x\resource\GLFrameBufferObject.h" />
-    <ClInclude Include="..\..\graphics\gl4x\resource\GLRenderTarget.h" />
-    <ClInclude Include="..\..\graphics\gl4x\resource\Texture.h" />
-    <ClInclude Include="..\..\graphics\gl4x\resource\TileCacheTexture.h" />
-    <ClInclude Include="..\..\graphics\gl4x\scene\BoundingVolume.h" />
-    <ClInclude Include="..\..\graphics\gl4x\scene\Camera.h" />
-    <ClInclude Include="..\..\graphics\gl4x\scene\CameraObject.h" />
-    <ClInclude Include="..\..\graphics\gl4x\scene\Frustum.h" />
-    <ClInclude Include="..\..\graphics\gl4x\scene\Material.h" />
-    <ClInclude Include="..\..\graphics\gl4x\scene\TransformAttribute.h" />
-    <ClInclude Include="..\..\graphics\gl4x\scene\ViewFrustum.h" />
-    <ClInclude Include="..\..\oreore\images\Bitmap.h" />
-    <ClInclude Include="..\..\oreore\thread\win\ThreadPool.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\app\MyGUI.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\resource\CacheDataManager.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\resource\GLFrameBufferObject.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\resource\GLRenderTarget.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\resource\Texture.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\resource\TileCacheTexture.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\scene\BoundingVolume.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\scene\Camera.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\scene\CameraObject.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\scene\Frustum.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\scene\Material.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\scene\TransformAttribute.h" />
+    <ClInclude Include="..\..\external\graphics\gl4x\scene\ViewFrustum.h" />
+    <ClInclude Include="..\..\external\oreore\images\Bitmap.h" />
+    <ClInclude Include="..\..\external\oreore\thread\win\ThreadPool.h" />
     <ClInclude Include="..\..\src\AtmosphericShader.h" />
     <ClInclude Include="..\..\src\Controller_base.h" />
     <ClInclude Include="..\..\src\GraphicsDevice.h" />
@@ -156,6 +156,26 @@
     <ClInclude Include="..\..\src\TerrainMaterial.h" />
     <ClInclude Include="..\..\src\TileCache.h" />
     <ClInclude Include="..\..\src\VirtualTexture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\assets\shader\AtmosphericShader.cgfx" />
+    <None Include="..\..\assets\shader\common.cgh" />
+    <None Include="..\..\assets\shader\CopyInscatter1.cgfx" />
+    <None Include="..\..\assets\shader\CopyInscatterN.cgfx" />
+    <None Include="..\..\assets\shader\CopyIrradiance.cgfx" />
+    <None Include="..\..\assets\shader\G_Buffer.cgfx" />
+    <None Include="..\..\assets\shader\HDRShader.cgfx" />
+    <None Include="..\..\assets\shader\HeightmapGenerator.cgfx" />
+    <None Include="..\..\assets\shader\Inscatter1.cgfx" />
+    <None Include="..\..\assets\shader\InscatterN.cgfx" />
+    <None Include="..\..\assets\shader\InscatterS.cgfx" />
+    <None Include="..\..\assets\shader\Irradiance1.cgfx" />
+    <None Include="..\..\assets\shader\IrradianceN.cgfx" />
+    <None Include="..\..\assets\shader\NoiseFunction.cgh" />
+    <None Include="..\..\assets\shader\ReflectanceFunction.cgh" />
+    <None Include="..\..\assets\shader\TerrainEngine.cgfx" />
+    <None Include="..\..\assets\shader\TextureSampler.cgh" />
+    <None Include="..\..\assets\shader\Transmittance.cgfx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
