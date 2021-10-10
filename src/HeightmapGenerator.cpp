@@ -131,7 +131,7 @@ void HeightmapGenerator::Draw(	uint32 tex_height, uint32 tex_normal,
 
 		//========================= ハイトマップの計算 ==============================//
 		m_Camera->SetViewParameter(pos, dn, dv);
-		m_Camera->SetProjectionParameter( 1.0f, -m_FoV, 0.01f, dimension*0.5f );// fovyマイナスで画面が上下反転，aspectマイナスで画面が左右反転.CullFaceも反転！！
+		m_Camera->SetProjectionParameter( -1.0f, m_FoV, 0.01f, dimension*0.5f );// fovyマイナスで画面が上下反転，aspectマイナスで画面が左右反転.CullFaceも反転！！
 		m_Camera->Update();
 
 		m_CgPass = cgGetFirstPass( m_etGenSphericalHeightMap );

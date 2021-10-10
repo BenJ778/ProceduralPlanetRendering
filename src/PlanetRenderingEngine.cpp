@@ -77,7 +77,7 @@ float		g_Rho				= 1.3f;
 
 // ハイトマップのスケール
 const float	g_HeightRange		= 10.5f;		// 最大高度(固定値)
-float		g_HorizontalScale	= 6.2f;	// 凹凸スケールの大きさ
+float		g_HorizontalScale	= 5.48f;//6.2f;	// 凹凸スケールの大きさ
 float		g_VerticalScale		= 3.0f;		// 起伏の変化度合い
 
 // ハイトマップの解像度選択

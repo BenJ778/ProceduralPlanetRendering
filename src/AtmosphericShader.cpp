@@ -8,6 +8,7 @@
 #include	<graphics/gl4x/other/MyGlPrimitive.h>
 using namespace MyGlPrimitive;
 
+#include	<graphics/gl4x/common/GLHelperFunctions.h>
 #include	<graphics/gl4x/resource/Texture.h>
 using namespace OreOreLib;
 
