@@ -1,10 +1,11 @@
 ﻿#ifndef VIRTUAL_TEXTURE_H
 #define VIRTUAL_TEXTURE_H
 
-#include	<vector>
+//#include	<vector>
 #include	<windows.h>
 #include	<process.h>
 
+#include	<oreore/container/Array.h>
 #include	<oreore/thread/ThreadPool.h>
 #include	<graphics/gl4x/resource/TileCacheTexture.h>
 
@@ -118,7 +119,7 @@ private:
 PageTableReference	*m_TilesPageTableRefs;	// タイルテクスチャが参照するページテーブルの情報
 int m_TileCapacity;
 
-	vector <PageTables> m_TableList;	// ページテーブルのリスト
+	Array<PageTables>	m_TableList;	// ページテーブルのリスト
 	HeightmapGenerator	*m_pNoiseFunc;	// ノイズ生成関数へのポインタ
 
 

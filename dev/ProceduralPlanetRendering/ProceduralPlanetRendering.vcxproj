@@ -108,7 +108,7 @@
     <ClCompile Include="..\..\external\graphics\gl4x\scene\Camera.cpp" />
     <ClCompile Include="..\..\external\graphics\gl4x\scene\CameraObject.cpp" />
     <ClCompile Include="..\..\external\graphics\gl4x\scene\Frustum.cpp" />
-    <ClCompile Include="..\..\external\graphics\gl4x\scene\Material.cpp" />
+    <ClCompile Include="..\..\external\graphics\common\Material.cpp" />
     <ClCompile Include="..\..\external\graphics\gl4x\scene\TransformAttribute.cpp" />
     <ClCompile Include="..\..\external\graphics\gl4x\scene\ViewFrustum.cpp" />
     <ClCompile Include="..\..\external\oreore\images\Bitmap.cpp" />
@@ -138,7 +138,7 @@
     <ClInclude Include="..\..\external\graphics\gl4x\scene\Camera.h" />
     <ClInclude Include="..\..\external\graphics\gl4x\scene\CameraObject.h" />
     <ClInclude Include="..\..\external\graphics\gl4x\scene\Frustum.h" />
-    <ClInclude Include="..\..\external\graphics\gl4x\scene\Material.h" />
+    <ClInclude Include="..\..\external\graphics\common\Material.h" />
     <ClInclude Include="..\..\external\graphics\gl4x\scene\TransformAttribute.h" />
     <ClInclude Include="..\..\external\graphics\gl4x\scene\ViewFrustum.h" />
     <ClInclude Include="..\..\external\oreore\images\Bitmap.h" />

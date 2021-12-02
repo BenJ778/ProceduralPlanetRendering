@@ -1,11 +1,10 @@
 ﻿#ifndef TERRAIN_MATERIAL_H
 #define TERRAIN_MATERIAL_H
 
-
 #include	<iostream>
-#include	<oreore/mathlib/GraphicsMath.h>
 
-#include	<graphics/gl4x/scene/Material.h>
+#include	<graphics/common/Material.h>
+#include	<oreore/mathlib/GraphicsMath.h>
 
 
 

@@ -16,37 +16,32 @@ using namespace std;
 
 //######################################## PageTable ######################################//
 PageTables::PageTables()
+	: m_numMIPs( 0 )
+	, m_Tables( NULL )
 {
 tcout << _T("PageTables::PageTables()...") << tendl;
 
-	m_numMIPs	= 0;
-	m_Tables	= NULL;
 }
 
 
 // ページテーブルを初期化する
-PageTables::PageTables(int nummips)
+PageTables::PageTables( int nummips )
+	: m_numMIPs( min(nummips, MAX_MIPLV) )
+	, m_Tables( new page_table_st[m_numMIPs]{} )
 {
 tcout << _T("PageTables::PageTables(int nummips)...") << tendl;
 
-	int i;
-	int x, y;
-
-	m_numMIPs	= min(nummips, MAX_MIPLV);
-	m_Tables	= new page_table_st[m_numMIPs];
-	
-		
 	// 各ミップマップレベルのテーブルを初期化する
-	for(i=0; i<m_numMIPs; i++)
+	for( int i=0; i<m_numMIPs; ++i )
 	{
 		m_Tables[i].tile_size	= (int)pow(2.0, i);
 		m_Tables[i].Page		= new PageFormat*[ m_Tables[i].tile_size ];
 
-		for(x=0; x<m_Tables[i].tile_size; x++)
+		for( int x=0; x<m_Tables[i].tile_size; ++x )
 		{
 			m_Tables[i].Page[x] = new PageFormat[m_Tables[i].tile_size];
 
-			for(y=0; y<m_Tables[i].tile_size; y++)
+			for( int y=0; y<m_Tables[i].tile_size; ++y )
 			{
 				m_Tables[i].Page[x][y].tileid	= 0;
 				m_Tables[i].Page[x][y].curr_lv	= 0;
@@ -61,26 +56,27 @@ tcout << _T("PageTables::PageTables(int nummips)...") << tendl;
 
 
 // コピーコンストラクタ
-PageTables::PageTables(const PageTables &pt)
+PageTables::PageTables( const PageTables &pt )
+	: m_numMIPs( pt.m_numMIPs )
+	, m_Tables( new page_table_st[m_numMIPs]{} )
 {
 tcout << _T("PageTables::PageTables(const PageTables &pt)...") << tendl;
-	int i, x, y;
 
-	m_numMIPs	= pt.m_numMIPs;
-	m_Tables	= new page_table_st[m_numMIPs];
+//	m_numMIPs	= pt.m_numMIPs;
+//	m_Tables	= new page_table_st[m_numMIPs]{};
 
 	// 各ミップマップレベルのテーブルを初期化する
-	for(i=0; i<m_numMIPs; i++)
+	for( int i=0; i<m_numMIPs; ++i )
 	{
 		m_Tables[i].tile_size	= pt.m_Tables[i].tile_size;					// tile_sizeをコピー
-		m_Tables[i].Page		= new PageFormat*[ m_Tables[i].tile_size ];	// 
+		m_Tables[i].Page		= new PageFormat*[ m_Tables[i].tile_size ]{};	// 
 		
 		// **Pageをコピー
-		for(x=0; x<m_Tables[i].tile_size; x++)
+		for( int x=0; x<m_Tables[i].tile_size; ++x )
 		{
-			m_Tables[i].Page[x] = new PageFormat[m_Tables[i].tile_size];
+			m_Tables[i].Page[x] = new PageFormat[ m_Tables[i].tile_size ]{};
 
-			for(y=0; y<m_Tables[i].tile_size; y++)
+			for( int y=0; y<m_Tables[i].tile_size; ++y )
 			{
 				m_Tables[i].Page[x][y].tileid	= pt.m_Tables[i].Page[x][y].tileid;
 				m_Tables[i].Page[x][y].curr_lv	= pt.m_Tables[i].Page[x][y].curr_lv;
@@ -103,13 +99,12 @@ tcout << _T("PageTables::~PageTables()...") << tendl;
 	
 	if(m_Tables)
 	{
-		int i, x;
 		// page_table_stのPageを解放する
-		for(i=0; i<m_numMIPs; i++)
+		for( int i=0; i<m_numMIPs; ++i )
 		{
 			if(m_Tables[i].Page)
 			{
-				for(x=0; x<m_Tables[i].tile_size; x++)
+				for( int x=0; x<m_Tables[i].tile_size; ++x )
 					delete [] m_Tables[i].Page[x];
 				delete [] m_Tables[i].Page;
 
@@ -151,7 +146,7 @@ tcout << _T("VirtualTexture::~VirtualTexture()...") << tendl;
 	SafeDelete( m_TileCache );// タイルキャッシュ削除	
 	SafeDeleteArray( m_TilesPageTableRefs );// タイルキャッシュが参照するページテーブル情報の削除
 
-	m_TableList.clear();// 各要素(PageTablesオブジェクト)のデストラクタが呼ばれる？
+	m_TableList.Release();// 各要素(PageTablesオブジェクト)のデストラクタが呼ばれる？
 }
 
 
@@ -196,12 +191,12 @@ tcout << _T("VirtualTexture::InitTileCache()...") << tendl;
 
 
 // ページテーブルを追加する
-int VirtualTexture::RegisterPageTables(int numLv)
+int VirtualTexture::RegisterPageTables( int numLv )
 {
 tcout << _T("VirtualTexture::RegisterPageTables()...") << tendl;
 
-	m_TableList.push_back( PageTables(numLv) );
-	return	m_TableList.size() -1;
+	m_TableList.AddToTail( PageTables(numLv) );
+	return	m_TableList.Length<int>() - 1;
 }
 
 

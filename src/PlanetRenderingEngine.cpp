@@ -253,7 +253,7 @@ tcout << _T("PlanetRenderingEngine::Create()...") << tendl;
 	//================== 地形レンダリングエンジン生成 ==========================//
 	m_TerrainEngine = new TerrainEngine();
 	m_TerrainEngine->AttachGraphicsDevice(m_Device_Sub);
-	m_TerrainEngine->Init(pos, 6360.0f, g_HeightRange, g_numSubdivision, g_Rho);
+	m_TerrainEngine->Init(pos, 6360.0f, g_HeightRange, int( g_numSubdivision ), g_Rho);
 	m_TerrainEngine->InitHeightmapGenerator(mapsize, 2.5f, g_HeightRange, g_HorizontalScale, g_VerticalScale);// ハイトマップ生成オブジェクトを初期化する
 	m_TerrainEngine->InitMeshObject(65, 3);
 	m_TerrainEngine->InitSurfaceProperties(	g_numMaterials, (const char **)&(*g_MatName),
@@ -278,7 +278,7 @@ tcout << _T("PlanetRenderingEngine::Create()...") << tendl;
 //m_FramebufferObject->Init( m_ScreenWidth, m_ScreenHeight, true );
 
 m_RenderTarget.Init( m_ScreenWidth, m_ScreenHeight, true ); 
-m_RenderTarget.BindTextures( ArraySize( texids ), g_DefaultColorAttachments, texids );
+m_RenderTarget.BindTextures( ArraySize<int>( texids ), g_DefaultColorAttachments, texids );
 
 		//m_FramebufferObject->AllocateBuffer(4);
 		//m_FramebufferObject->AttachRenderBuffer(GL_DEPTH_COMPONENT16, GL_DEPTH_ATTACHMENT, m_ScreenWidth, m_ScreenHeight);
@@ -796,7 +796,7 @@ void PlanetRenderingEngine::SetScreenSize(int width, int height)
 		const GLuint texids[] =	{ m_Gbuffer->Position(), m_Gbuffer->Normal(), m_Gbuffer->Diffuse(), m_Gbuffer->Specular() };
 //m_Attachment.Init( ArraySize( texids ), texids, g_DefaultColorAttachments );
 m_RenderTarget.Init( m_ScreenWidth, m_ScreenHeight, true );
-m_RenderTarget.BindTextures( ArraySize( texids ), g_DefaultColorAttachments, texids );
+m_RenderTarget.BindTextures( ArraySize<int>( texids ), g_DefaultColorAttachments, texids );
 
 //m_FramebufferObject->Init( m_ScreenWidth, m_ScreenHeight );
 //m_FramebufferObject->BindAttachment( &m_Attachment );
