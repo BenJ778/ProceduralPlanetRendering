@@ -4,7 +4,7 @@
 
 ## About
 
-Simple Realtime procedural planet rendering applicattion. 
+Simple Realtime procedural planet rendering application. 
 Implemented using C/C++, OpenGL, and NVIDIA Cg.
 
 ## Features
@@ -23,11 +23,11 @@ Implemented using C/C++, OpenGL, and NVIDIA Cg.
 
 ## Running application
 
-1. Download prebuilt applitation from [**here**](https://github.com/masatakesato/ProceduralPlanetRendering/releases/download/v0.0.1-alpha/ProceduralPlanetRendering.zip).
+1. Download prebuilt application from [**here**](https://github.com/masatakesato/ProceduralPlanetRendering/releases/download/v0.0.1-alpha/ProceduralPlanetRendering.zip).
 
 2. Extract zip file and execute ProceduralPlanetRendering.exe inside bin folder.
 
-## Building Application
+## Building application
 
 ### Prerequisities
 
