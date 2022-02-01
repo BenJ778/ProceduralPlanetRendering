@@ -27,6 +27,24 @@ Implemented using C/C++, OpenGL, and NVIDIA Cg.
 
 2. Extract zip file and execute ProceduralPlanetRendering.exe inside bin folder.
 
+3. Mouse & Keyboard controls.
+   
+   - Mouse controls
+     
+     Left button drag: Pitch / Yaw
+     
+     Right button drag: Move sun position.
+   
+   - Keyboard controls
+     
+     W / S:  Move Forward / Backward
+     
+     A / D:  Move Left / Right
+     
+     R / F:   Move Up / Down
+     
+     Q / E:  Roll Left / Right
+
 ## Building application
 
 ### Prerequisities
